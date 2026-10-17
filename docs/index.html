@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gouvernance des données géographiques dans les EPCI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="entete">
+  <div class="cadre">
+    <p class="sur">Enquête auprès des Etablissement publics de coopération intercommunale</p>
+    <h1>Gouvernance des données géographiques dans les EPCI</h1>
+    <p class="chapo" id="chapo"></p>
+  </div>
+</header>
+
+<div class="outils">
+  <div class="cadre">
+    <div class="ctl" id="ctl-perim"><span class="et">Répondants</span>
+      <button data-ctl="perim" data-val="tous">Tous</button>
+      <button data-ctl="perim" data-val="cc_ca">CC et CA seulement</button></div>
+    <div class="ctl"><span class="et">Comparer par</span>
+      <button data-ctl="par" data-val="">Rien</button>
+      <button data-ctl="par" data-val="type">Type d'EPCI</button>
+      <button data-ctl="par" data-val="region">Région</button></div>
+    <div class="ctl"><span class="et">Pourcentages sur</span>
+      <button data-ctl="base" data-val="concernes">Répondants concernés</button>
+      <button data-ctl="base" data-val="tous">Tous les répondants</button></div>
+    <div class="ctl"><span class="et">Valeurs</span>
+      <button data-ctl="mode" data-val="pct">%</button>
+      <button data-ctl="mode" data-val="n">Effectifs</button></div>
+    <div class="ctl" id="ctl-region" hidden></div>
+  </div>
+</div>
+
+<div class="cadre page">
+  <nav id="nav">
+    <input id="recherche" type="search" placeholder="Chercher une question" aria-label="Chercher une question">
+    <ol id="sommaire"></ol>
+  </nav>
+  <main id="principal"></main>
+</div>
+
+<footer class="pied"><div class="cadre" id="pied"></div></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

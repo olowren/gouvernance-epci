@@ -1,0 +1,3 @@
+__pycache__/
+# le classeur source n'est pas publié ; retirer cette ligne pour le versionner
+data/*.xlsx
